@@ -1,0 +1,179 @@
+.skillcs{
+    background-color: #283845;
+}
+
+.skillheadercs{
+    color: #e8c2ca;
+    font-weight: 800;
+}
+
+.underlinecs{
+    width: 100px;
+    border: 3px solid #ffd8be;
+    margin: auto;
+}
+
+.skilltitlecs{
+    color: #e8c2ca;
+}
+
+.titlelinecs{
+    width: 165px;
+    border: 3px solid #ffd8be;
+    margin-left: 0px;
+}
+
+.topbuffercs{
+    margin-top:20px;
+}
+
+.progress{
+    position: relative;
+    /* height: 10px;
+    width: 75px;
+    border: 5px solid #f4a261;
+    border-radius: 15px; */
+}
+.progress .color{
+    position: absolute;
+    background-color: #335c67;
+    height: 15px;
+    border-radius: 0px  15px 15px 0px;
+}
+
+.progress .color-burmese{
+    width: 100%;
+    animation: progres-hundred 4s;  
+}
+
+.progress .color-english{
+    width: 70%;
+    animation: progres-seventy 4s;  
+}
+
+.progress .color-japanese{
+    width: 90%;
+    animation: progres-ninty 4s;  
+}
+
+.progress .color-csharp{
+    width: 90%;
+    animation: progres-ninty 4s;  
+}
+
+.progress .color-delphi{
+    width: 95%;
+    animation: progres-nintyfive 4s;  
+}
+
+.progress .color-cdplus{
+    width: 95%;
+    animation: progres-nintyfive 4s;  
+}
+
+.progress .color-html{
+    width: 50%;
+    animation: progres-fifty 4s;  
+}
+
+.progress .color-css{
+    width: 40%;
+    animation: progres-forty 4s;  
+}
+
+.progress .color-bootstrap{
+    width: 30%;
+    animation: progres-thirty 4s;  
+}
+
+.progress .color-js{
+    width: 70%;
+    animation: progres-seventy 4s;  
+}
+
+.progress .color-php{
+    width: 50%;
+    animation: progres-fifty 4s;  
+}
+
+@keyframes progres-thirty{
+    0%{
+      width: 0%;
+    }
+    100%{
+        width: 30%;
+    }
+}
+
+@keyframes progres-forty{
+    0%{
+      width: 0%;
+    }
+    100%{
+        width: 40%;
+    }
+}
+
+@keyframes progres-fifty{
+    0%{
+      width: 0%;
+    }
+    100%{
+        width: 50%;
+    }
+}
+
+@keyframes progres-seventy{
+    0%{
+      width: 0%;
+    }
+    100%{
+        width: 70%;
+    }
+}
+
+@keyframes progres-ninty{
+    0%{
+      width: 0%;
+    }
+    100%{
+        width: 90%;
+    }
+}
+
+@keyframes progres-nintyfive{
+    0%{
+      width: 0%;
+    }
+    100%{
+        width: 95%;
+    }
+}
+
+@keyframes progres-hundred{
+    0%{
+      width: 0%;
+    }
+    100%{
+        width: 100%;
+    }
+}
+
+/* @media screen and (max-width:768px){
+    .progress .color{
+        background-color: #335c67;
+        width: 10%;
+        height: 15px;
+        border-radius: 0px  15px 15px 0px;
+        animation: progres 4s; 
+    }
+
+    @keyframes progres{
+        0%{
+          width: 0%;
+        }
+        75%{
+            width: 10%;
+        }
+    }
+} */

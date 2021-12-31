@@ -1,0 +1,374 @@
+@import url('https://fonts.googleapis.com/css2?family=Oswald&family=Source+Sans+Pro:wght@300&display=swap');
+
+body{
+    font-family: 'Source Sans Pro', sans-serif;
+    margin: 0;
+    background: #C6AF8F;
+}
+
+/* Start Header */
+header{
+    /* headerပိုင်းမှာ ပုံအပြည့်ပေါ် */
+    height: 100vh; 
+    /* bg img ကို layerတစ်ထပ်အုပ် */
+    background-image: linear-gradient(
+        rgba(0,0,0,0.3),
+        rgba(0,0,0,0.3)
+    ), url('../assets/img/etc/cover.jpg');
+    background-repeat: no-repeat;
+    background-position: center;
+    /* bg img ကို fitပေါ်စေချင်တာ */
+    background-size: cover;
+
+    position: relative;
+}
+/* Start Navbar */
+.navbar{
+    background: #283845;
+    padding: 20px 30px;
+}
+
+/* scrollဆွဲရင် navbarသေးသွားဖို့ */
+/* scrollက jsကနေactiveလုပ်မှာ */
+.navemenucs{
+    background: linear-gradient(rgba(0,0,0,0.6),rgba(0,0,0,0.7));
+    /* paddingက top bottomကိုပဲ သေးရုံပဲ */
+    padding: 5px 30px;
+}
+
+.menuitemcs{
+    color: #eee;
+    font-size: 13px;
+
+    /* စာကိုခြားတာ */
+    letter-spacing: 1px;
+
+    transition: color 0.5s;
+}
+
+.menuitemcs:hover{
+    color: #F3DE2C;
+}
+
+.headertextcs{
+    font-family: 'Lobster', cursive;
+}
+
+.line1cs,.line2cs,.line3cs{
+    width: 23px;
+    height: 3px;
+
+    margin: 5px;
+}
+
+.changecs .line1cs{
+    /* ဘယ်ဘက်ကို မို့လို့ - , အောက်ကို ဆင်းမှာမို့လို့ + */
+    transform: rotate(-45deg) translate(-5px, 6px);
+}
+
+.changecs .line2cs{
+    opacity: 0;
+}
+
+.changecs .line3cs{
+    /* ဘယ်ဘက်ကို မို့လို့ - , အပေါ်ကို တက်မှာမို့လို့ - */
+    transform: rotate(45deg) translate(-5px, -6px);
+}
+
+/* End Navbar */
+
+/* Start Banner */
+.bannercs{
+    width: 80%;
+    position: absolute;
+
+    top: 50%;
+    left: 50%;
+
+    transform: translate(-50%, -50%);
+
+}
+
+.bannerheadercs{
+    animation-name: bnani;
+    animation-duration: 2s;
+}
+
+.bannerparagraphcs{
+    font-size:larger;
+
+    animation-name: bnani;
+    animation-duration: 2s;
+
+    /* 5မိနစ်စောင့်ပြီးမှ ဝင်မယ် */
+    animation-delay: 0.5s;
+    animation-fill-mode: backwards;
+}
+
+.bannertextcs{
+    font-family: 'Lobster', cursive;
+    background-image: radial-gradient(
+        ellipse 50% 35% at 50% 50%,
+        #736b92,
+        transparent
+      );
+    color: #f7f5f2;
+    text-shadow: 0 0 0.2rem #ebddfe, 0 0 1.5rem #d6bffe,
+    -0.2rem 0.1rem 1rem #34a0a4, 0.2rem 0.1rem 1rem #1a759f,
+    0 -0.5rem 2rem #184e77, 0 0.5rem 3rem #073b4c;
+
+    animation: shine 2s forwards, flicker 3s infinite;
+}
+
+.flickercs {
+    animation: shine 2s forwards, blink 3s 2s infinite;
+ }
+  
+.fast-flickercs {
+    animation: shine 2s forwards, blink 10s 1s infinite;
+}
+
+.bannerimagecs img{
+    width: 600px;
+    height: 500px;
+}
+
+.noselect {
+    -webkit-touch-callout: none;
+      -webkit-user-select: none;
+       -khtml-user-select: none;
+         -moz-user-select: none;
+          -ms-user-select: none;
+              user-select: none;
+          -webkit-tap-highlight-color: transparent;
+  }
+
+.btncontactcs{
+    width: 130px;
+    height: 50px;
+	cursor: pointer;
+	font-size: 20px;
+	font-weight: bold;
+	color: white;
+	background: #bb9457;
+	border: 2px solid #283845;
+	transition: 500ms ease-in-out;
+    position: absolute;
+    top: 90%;
+    left: 60%;
+    border-radius: 20px;
+}
+.btncvcs{
+    width: 100px;
+    height: 50px;
+	cursor: pointer;
+	font-size: 20px;
+	font-weight: bold;
+	color: white;
+	background: #bb9457;
+	border: 2px solid 283845;
+	transition: 500ms ease-in-out;
+    position: absolute;
+    position: absolute;
+    top: 90%;
+    left: 50%;
+    border-radius: 20px;
+}
+
+button:hover {
+	box-shadow: 20px 5px 0 #283845, -20px -5px 0 #283845;
+}
+
+button:focus {
+	outline: none;
+}
+
+
+@keyframes blink {
+    0%,
+    22%,
+    36%,
+    75% {
+      color: #f7f5f2;
+      text-shadow: 0 0 0.2rem #ebddfe, 0 0 1.5rem #d6bffe,
+      -0.2rem 0.1rem 1rem #34a0a4, 0.2rem 0.1rem 1rem #1a759f,
+      0 -0.5rem 2rem #184e77, 0 0.5rem 3rem #073b4c;
+    }
+    28%,
+    33% {
+      color: #023047;
+      text-shadow: none;
+    }
+    82%,
+    97% {
+      color: #fff3b0;
+      text-shadow: none;
+    }
+}
+
+@keyframes shine {
+    0% {
+      color: #fff3b0;
+      text-shadow: none;
+    }
+    100% {
+      color: #023047;
+      text-shadow: 0 0 0.2rem #ebddfe, 0 0 1.5rem #d6bffe,
+      -0.2rem 0.1rem 1rem #34a0a4, 0.2rem 0.1rem 1rem #1a759f,
+      0 -0.5rem 2rem #184e77, 0 0.5rem 3rem #073b4c;
+    }
+  }
+  
+@keyframes flicker {
+    from {
+        opacity: 1;
+    }
+  
+    4% {
+        opacity: 0.9;
+    }
+  
+    6% {
+        opacity: 0.85;
+    }
+  
+    8% {
+        opacity: 0.95;
+    }
+  
+    10% {
+        opacity: 0.9;
+    }
+  
+    11% {
+        opacity: 0.922;
+    }
+  
+    12% {
+        opacity: 0.9;
+    }
+  
+    14% {
+        opacity: 0.95;
+    }
+  
+    16% {
+        opacity: 0.98;
+    }
+  
+    17% {
+        opacity: 0.9;
+    }
+  
+    19% {
+        opacity: 0.93;
+    }
+  
+    20% {
+        opacity: 0.99;
+    }
+  
+    24% {
+        opacity: 1;
+    }
+  
+    26% {
+        opacity: 0.94;
+    }
+  
+    28% {
+        opacity: 0.98;
+    }
+  
+    37% {
+        opacity: 0.93;
+    }
+  
+    38% {
+        opacity: 0.5;
+    }
+  
+    39% {
+        opacity: 0.96;
+    }
+  
+    42% {
+        opacity: 1;
+    }
+  
+    44% {
+        opacity: 0.97;
+    }
+  
+    46% {
+        opacity: 0.94;
+    }
+  
+    56% {
+        opacity: 0.9;
+    }
+  
+    58% {
+        opacity: 0.9;
+    }
+  
+    60% {
+        opacity: 0.99;
+    }
+  
+    68% {
+        opacity: 1;
+    }
+  
+    70% {
+        opacity: 0.9;
+    }
+  
+    72% {
+        opacity: 0.95;
+    }
+  
+    93% {
+        opacity: 0.93;
+    }
+  
+    95% {
+        opacity: 0.95;
+    }
+  
+    97% {
+        opacity: 0.93;
+    }
+  
+    to {
+        opacity: 1;
+    }
+  }
+
+@keyframes bnani {
+    0%{
+        transform: translate(-100px);
+        opacity: 0;
+    }
+    100%{
+        /* နဂိုနေရာမှာပေါ်မယ့်ပုံ */
+        transform: translateX(0);
+        opacity: 1;
+    }    
+}
+
+@media screen and (max-width:768px){
+    .btncontactcs{
+        width: 100px;
+        height: 50px;
+        font-size: 16px;
+        transform: translate(-30px, 150px);
+    }
+    .btncvcs{
+        width: 70px;
+        height: 50px;
+        font-size: 16px;
+        transform: translate(-100px, 150px);
+    }
+}
+
