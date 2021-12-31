@@ -361,6 +361,14 @@ button:focus {
     .bannerheadercs{
         transform: translate(180px, -10px);
     }
+
+    .projimgcs{
+        width: 100px;
+        height: 50px;
+    
+        border-radius: 15px 15px;
+        border: 3px solid #283845;
+    }
 } 
 
 @media screen and (max-width:1100px){
@@ -378,6 +386,14 @@ button:focus {
         height: 50px;
         font-size: 16px;
         transform: translate(-100px, 150px);
+    }
+
+    .projimgcs{
+        width: 100px;
+        height: 50px;
+    
+        border-radius: 15px 15px;
+        border: 3px solid #283845;
     }
 }
 
