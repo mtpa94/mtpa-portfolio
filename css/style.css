@@ -183,6 +183,34 @@ button:focus {
 	outline: none;
 }
 
+.cvcustomcs{
+    background-color: #283845;
+}
+
+.cvimgcs{
+    width: 300px;
+    height: 300px;
+    border-radius: 100%;
+}
+
+.cvtextcs{
+    font-size: 30px;
+    margin-top: 50px;
+}
+
+.cvbuttoncs{
+    font-size: 16px;
+    width: 100px;
+    height: 50px;
+	background: #bb9457;
+    color: #023047;
+    font-weight: 800;
+    border-radius: 15px 15px;
+}
+
+.cvbuttoncs:hover{
+    background: #C6AF8F;
+}
 
 @keyframes blink {
     0%,
