@@ -29,10 +29,7 @@
 
 .progress{
     position: relative;
-    /* height: 10px;
-    width: 75px;
-    border: 5px solid #f4a261;
-    border-radius: 15px; */
+    width: 300px;
 }
 .progress .color{
     position: absolute;
@@ -94,6 +91,11 @@
 .progress .color-php{
     width: 50%;
     animation: progres-fifty 4s;  
+}
+
+.progress .color-mysql{
+    width: 50%;
+    animation: progres-thirty 4s;  
 }
 
 @keyframes progres-thirty{
